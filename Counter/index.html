@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .btn {
+            padding: 9px 15px;
+            margin: 10px;
+            border: 4px solid #e1cff3;
+            background-color: rgb(161, 218, 236);
+            font-weight: bold;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #8a2be2;
+            color: white;
+            border-color: #9370db;
+            box-shadow: 0 0 10px rgba(139, 43, 226, 0.5);
+        }
+
+        div{
+            text-align: center;
+            border: 3px solid brown;
+            margin: 50px 200px 200px ;
+            height: 450px;
+            border-radius: 22px;
+            background: linear-gradient(to right, #8a2be2, #9370db, #ba55d3);
+
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Counter</h1>
+        <button class="btn" id="increment">+</button>
+        <button class="btn" id="decrement">-</button>
+        <button class="btn" id="reset">reset</button>
+        <h1 id="counter">0<h1>
+    </div>
+   
+
+
+    <script src="main.js"></script>
+</body>
+</html>
