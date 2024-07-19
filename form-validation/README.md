@@ -1,0 +1,2 @@
+## Description: 
+This project demonstrates client-side form validation using JavaScript. It validates user input in a form before submitting it. Additionally, upon successful validation, it displays a success message and allows users to preview the submitted data in a read-only format.
