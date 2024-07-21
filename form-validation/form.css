@@ -51,5 +51,14 @@ button{
     font-size: larger;
 }
 
+.error {
+  border-color: red;
+}
 
-  
+.success {
+  border-color: green;
+}
+
+.error-message {
+  color: red;
+}
