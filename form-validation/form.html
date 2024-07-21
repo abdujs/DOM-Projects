@@ -11,13 +11,21 @@
             <h1>Registration form</h1>
             <label for="Username">Username</label><br>
             <input type="text" id="Username" name="Username" placeholder="Enter your name"><br>
+            <span id="name-error" class="error-message"></span>
+
             <label for="Email">Email</label><br>
             <input type="text" id="Email" name="Email" placeholder="Enter your email"><br>
+            <span id="email-error" class="error-message"></span>
+
             <label for="Password">Password</label><br>
             <input type="Password" id="Password" name="Password" placeholder="Enter your password"><br>
-            <label>Confirm Password</label><br>
+            <span id="password-error" class="error-message"></span>
+
+            <label for="Confirm-Password">Confirm Password</label><br>
             <input type="password" id="Confirm-Password" name="Confirm-Password" placeholder="confirm your password"><br>
-            <button type="submit">Submit</button>      
+            <span  id="confirmPasswordError" class="error"></span>
+            
+            <button type="submit" id="btn">Submit</button>      
     </form>
 
     
