@@ -45,6 +45,11 @@
             checkWeather(searchBox.value);
         })
 
-       
+         // Add event listener for the Enter key
+        searchBox.addEventListener('keydown', (event) => {
+            if(event.key === 'Enter'){
+                checkWeather(searchBox.value);
+            }
+        })
 
     
