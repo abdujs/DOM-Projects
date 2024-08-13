@@ -22,25 +22,27 @@
                 document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
                 document.querySelector('.wind').innerHTML = data.wind.speed + 'km/hr';
 
-                if(data.weather[0].main == 'Cloude'){
-                    weatherIcon.src = 'img/cloud.png'
-                }
-                else if (data.weather[0].main == 'Clear'){
-                    weatherIcon.src = 'img/Clear.png'
-                }
-                else if (data.weather[0].main == 'rain'){
-                    weatherIcon.src = 'img/Rain.png'
-                }
-                else if (data.weather[0].main == 'Drizzle'){
-                    weatherIcon.src = 'img/Drizzle.png'
-                }
-                else if (data.weather[0].main == 'Mist'){
-                    weatherIcon.src = 'img/Mist.png'
-                }
+                updateWeatherIcon(data.weather[0].main);
+
                 document.querySelector('.weather').style.display = 'block';
                 document.querySelector('.error').style.display = 'none';
             }   
         }
+
+        function updateWeatherIcon(weatherCondition) {
+            if (weatherCondition === 'Clouds') {
+                weatherIcon.src = 'img/cloud.png';
+            } else if (weatherCondition === 'Clear') {
+                weatherIcon.src = 'img/sunny.png';
+            } else if (weatherCondition === 'Rain') {
+                weatherIcon.src = 'img/raining.png';
+            } else if (weatherCondition === 'Drizzle') {
+                weatherIcon.src = 'img/Drizzle.png';
+            } else if (weatherCondition === 'Mist') {
+                weatherIcon.src = 'img/Mist.png';
+            }
+        }
+
         searchBtn.addEventListener('click', () => {
             checkWeather(searchBox.value);
         })
@@ -51,5 +53,6 @@
                 checkWeather(searchBox.value);
             }
         })
+       
 
     
